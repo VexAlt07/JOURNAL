@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MOT DE PASSE</title>
+  <link rel="shortcut icon" href="images/sake2.png" type="image/png"/>
+  <script src="script.js"></script>
+  <style> 
+    .couleurs { 
+    background-color: RGBA(28, 28, 28); 
+    color: white; 
+    } 
+    </style> 
+</head>
+<FONT face="Times Nex Roman">
+  <body class="couleurs">
+  <h1>MOT DE PASSE</h1>
+  <input type="password" id="password" placeholder="Mot de passe">
+  <button onclick="validatePassword()">Entrer</button>
+
+  <script>
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+
+      // Vérifiez le mot de passe ici
+      if (password === "Annie, are you okay? Will you tell us that you're okay? There's a sound at the window Then he struck you, a crescendo, Annie He came into your apartment Left the bloodstains on the carpet And then you ran into the bedroom You were struck down It was your doom") {
+        window.location.href = "index.html";
+      } else {
+        alert("Mot de passe incorrect. Veuillez réessayer.");
+      }
+    }
+    
+  </script>
+</body>
+</FONT>
+</html>
